@@ -4,9 +4,6 @@ FROM python:3.12
 # Establece el directorio de trabajo en /ProyectoIntegrador-Service
 WORKDIR /ProyectoIntegrador-Service
 
-# Copia el archivo .env al contenedor
-COPY .env /ProyectoIntegrador-Service/.env
-
 # Copia solo los archivos necesarios para la instalación de dependencias
 COPY requirements.txt .
 
